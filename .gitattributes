@@ -1,0 +1,7 @@
+# Ensure all text files use CRLF line endings on checkout
+* text=auto
+
+# Explicitly declare files that should always use CRLF line endings
+Model_Training_LSTM_BiLSTM/LSTM_BiLSTM/model_wiki.txt text eol=crlf
+*.txt text eol=crlf
+*.sh text eol=crlf

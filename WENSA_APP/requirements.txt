@@ -1,0 +1,13 @@
+streamlit
+matplotlib
+seaborn
+urlextract
+wordcloud
+pandas
+emoji
+plotly
+numpy
+textblob
+pyYAML
+streamlit-aggrid
+torch
