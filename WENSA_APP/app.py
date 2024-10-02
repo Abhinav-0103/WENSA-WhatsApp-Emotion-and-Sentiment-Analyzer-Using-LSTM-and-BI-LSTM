@@ -61,37 +61,37 @@ def aggrid_interactive_table(df: pd.DataFrame):
 #             multilingul_list.append(word)
 #     return set(STOPWORDS).union(set(multilingul_list))
 
-def generate_word_cloud(text: str):
-    """
-    Function takes text as input and transform it to
-    WordCloud display
+# def generate_word_cloud(text: str):
+#     """
+#     Function takes text as input and transform it to
+#     WordCloud display
 
-    attributes
-    ----------
-    text (str): String of words
-    title (str): title Sting
+#     attributes
+#     ----------
+#     text (str): String of words
+#     title (str): title Sting
 
-    Return
-    ------
-    Matplotlib figure for wordcloud
-    """
-    wordcloud = WordCloud(
-        scale=3,
-        width=650,
-        height=330,
-        max_words=200,
-        colormap='viridis', #'tab20c',
-        stopwords=add_multilingual_stopwords(),
-        collocations=True,
-        contour_color='#5d0f24',
-        contour_width=3,
-        font_path='Laila-Regular.ttf',
-        background_color="white").generate(text)
+#     Return
+#     ------
+#     Matplotlib figure for wordcloud
+#     """
+#     wordcloud = WordCloud(
+#         scale=3,
+#         width=650,
+#         height=330,
+#         max_words=200,
+#         colormap='viridis', #'tab20c',
+#         stopwords=add_multilingual_stopwords(),
+#         collocations=True,
+#         contour_color='#5d0f24',
+#         contour_width=3,
+#         font_path='Laila-Regular.ttf',
+#         background_color="white").generate(text)
 
-    plt.figure(figsize=(10, 8))
-    plt.imshow(wordcloud, interpolation='bilinear')
-    plt.axis("off")
-    st.pyplot()
+#     plt.figure(figsize=(10, 8))
+#     plt.imshow(wordcloud, interpolation='bilinear')
+#     plt.axis("off")
+#     st.pyplot()
 
 # Displaying the stats
 def display_stats(stats):
