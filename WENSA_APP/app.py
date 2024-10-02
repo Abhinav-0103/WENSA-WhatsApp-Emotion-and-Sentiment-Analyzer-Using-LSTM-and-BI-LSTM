@@ -39,27 +39,27 @@ def aggrid_interactive_table(df: pd.DataFrame):
 
     return selection
 
-def add_multilingual_stopwords():
-    """
-    Function read language file stop words and convert
-    them into List of STOPWORDS.
-    Top languages added under stopwords folder.
+# def add_multilingual_stopwords():
+#     """
+#     Function read language file stop words and convert
+#     them into List of STOPWORDS.
+#     Top languages added under stopwords folder.
 
-    attributes
-    ----------
-    None
+#     attributes
+#     ----------
+#     None
 
-    Returns
-    -------
-    set: Distinct list of words
-    """
-    multilingul_list = []
-    for file in os.listdir('./configs/stopwords'):
-        stopword = open('./configs/stopwords/' + file, "r",encoding="utf-8")
-        for word in stopword:
-            word = re.sub('[\n]', '', word)
-            multilingul_list.append(word)
-    return set(STOPWORDS).union(set(multilingul_list))
+#     Returns
+#     -------
+#     set: Distinct list of words
+#     """
+#     multilingul_list = []
+#     for file in os.listdir('./configs/stopwords'):
+#         stopword = open('./configs/stopwords/' + file, "r",encoding="utf-8")
+#         for word in stopword:
+#             word = re.sub('[\n]', '', word)
+#             multilingul_list.append(word)
+#     return set(STOPWORDS).union(set(multilingul_list))
 
 def generate_word_cloud(text: str):
     """
