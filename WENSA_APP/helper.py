@@ -79,7 +79,7 @@ def most_busy_users(df):
 # Top 25 used Words during Conversation
 def most_common_words(df):
 
-    f = open('./configs/stopwords/stop_hinglish.txt', 'r')
+    f = open('./stop_hinglish.txt', 'r')
     stop_words = f.read()
 
     temp = df[df['name'] != 'group_notification']
