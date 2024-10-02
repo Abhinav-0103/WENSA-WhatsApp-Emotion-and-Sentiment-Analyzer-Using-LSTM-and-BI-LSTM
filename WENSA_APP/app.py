@@ -268,11 +268,11 @@ def chart_display(df2,df3,temp_df,strn):
         ax.text(i, v, str(v), color='blue', fontsize=8, ha='center', va='bottom', rotation=45, bbox=dict(boxstyle='circle,pad=0.3', fc='white', alpha=0.5))
     st.pyplot(fig)
 
-    st.markdown("----")
-    st.subheader("🔘 Word Cloud for Words and Phrases frequently used in Chat")
-    st.info("🔋 Frequently used words or phrases by all members in group chat. Most dicussion occurs around below words or used frequently.")
-    text = create_wordcloud(df3)
-    generate_word_cloud(text)
+    # st.markdown("----")
+    # st.subheader("🔘 Word Cloud for Words and Phrases frequently used in Chat")
+    # st.info("🔋 Frequently used words or phrases by all members in group chat. Most dicussion occurs around below words or used frequently.")
+    # text = create_wordcloud(df3)
+    # generate_word_cloud(text)
     
     st.markdown("----")
     st.header("🔘 Clustering on the basis of Member activity")
