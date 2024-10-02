@@ -18,10 +18,6 @@ from helper import emoji_extract,most_common_words,cloud_data,create_wordcloud,p
 
 from custom_modules import func_analysis as analysis
 
-# to disable warning by file_uploader going to convert into io.TextIOWrapper
-st.set_option('deprecation.showfileUploaderEncoding', False)
-st.set_option('deprecation.showPyplotGlobalUse', False)
-
 warnings.filterwarnings("ignore", message="Glyph 128584 missing from current font.")
 
 def aggrid_interactive_table(df: pd.DataFrame):
